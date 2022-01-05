@@ -1,8 +1,8 @@
-$path = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer"
-$key = "NoDriveTypeAutoRun"
+$path = "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters"
+$key = "RestrictNullSessAccess".ToLower()
 $type = "DWORD"
-$value = "0xFF"
-$Action = "Disable Explorer Autoplay"
+$value = "1"
+$Action = "Restrict Null Access"
 
 $reg = Get-ItemProperty -Path  $path -Name $key -ErrorAction SilentlyContinue
 

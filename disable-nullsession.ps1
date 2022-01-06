@@ -1,5 +1,5 @@
 $path = "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters"
-$key = "RestrictNullSessAccess".ToLower()
+$key = "RestrictNullSessAccess"
 $type = "DWORD"
 $value = "1"
 $Action = "Restrict Null Access"
